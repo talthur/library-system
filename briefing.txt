@@ -1,0 +1,39 @@
+Sistema de Biblioteca/Java REST/API
+
+
+Básico (Spring Web, JPA Hibernate, Spring Security, MySQL)
+================================================================
+Admin | User
+
+Livro{
+	
+Título;
+Autor;
+Categoria;
+Páginas;
+Ano;
+Editora;
+
+Está disponível? Caso não, quando estará?
+}
+
+
+Admin {
+	
+Inserir novos titulos no catálogo;
+Alterar títulos catalogados;
+Excluir títulos do catálogo;
+Consultar títulos catalogados;
+
+}
+
+User{
+ Consultar e reservar títulos;
+}
+
+================================================================
+
+Addons
+================================================================
+Analisar dados de acessos: livros mais consultados, autores mais consultados, gênero mais popular, etc;
+
