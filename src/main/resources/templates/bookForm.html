@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Book Form Spring</title>
+</head>
+<body>
+	<h1>Form of Book</h1>
+
+	<form action="#" th:action="@{/process}" th:object="${book}" method="post">
+	
+	Title:<input type="text" th:field="*{title}">
+	<span th:if="${#fields.hasErrors('title')}"
+	th:errors="*{title}"
+	></span><br>
+	
+	Author:<input type="text" th:field="*{author}">
+	<span th:if="${#fields.hasErrors('author')}"
+	th:errors="*{author}"
+	></span><br>
+	
+	Category:<input type="text" th:field="*{category}">
+	<span th:if="${#fields.hasErrors('category')}"
+	th:errors="*{category}"
+	></span><br>
+	
+	Publisher:<input type="text" th:field="*{publisher}">
+	<span th:if="${#fields.hasErrors('publisher')}"
+	th:errors="*{publisher}"
+	></span><br>
+	
+	Pages:<input type="text" th:field="*{numberPages}">
+	<span th:if="${#fields.hasErrors('numberPages')}"
+	th:errors="*{numberPages}"
+	></span><br>
+	
+	Year:<input type="text" th:field="*{year}">
+	<span th:if="${#fields.hasErrors('year')}"
+	th:errors="*{year}"
+	></span><br>
+	
+	<input type="submit" value="Send">
+	
+	
+	</form>
+</body>
+</html>

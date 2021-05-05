@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Book list</title>
+</head>
+<body>
+	<h1>Book form</h1>
+	<a href="/add">Add new book</a><br>
+	<div th:each="book : ${books}">
+	
+	<h4 th:inline="text"> [[${book.title}]] of [[${book.author}]] in category: [[${book.category}]]
+	
+	
+	</h4></div>
+</body>
+</html>

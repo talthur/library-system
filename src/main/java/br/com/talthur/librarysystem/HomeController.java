@@ -20,13 +20,13 @@ public class HomeController {
 	@RequestMapping("/")
 	public String homeApp(Model model) {
 		model.addAttribute("books", bookRepository.findAll());
-		return "index";
+		return "listBooks";
 	}
 	
 	@GetMapping("/add")
 	public String bookForm (Model model) {
 		
-		model.addAttribute("books", new Book());
+		model.addAttribute("book", new Book());
 		return "bookForm";
 	}
 	
