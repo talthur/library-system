@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.talthur.librarysystem.BookRepository;
 import br.com.talthur.librarysystem.models.Book;
+import br.com.talthur.librarysystem.security.repository.BookRepository;
 
 @Controller
 public class HomeController {

@@ -1,4 +1,4 @@
-package br.com.talthur.librarysystem;
+package br.com.talthur.librarysystem.security.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
