@@ -46,7 +46,7 @@ public class User {
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(joinColumns = @JoinColumn(name = "user_id"),
 	inverseJoinColumns = @JoinColumn(name = "role_id"))
-	private Collection<Role> roles;
+	private Collection<org.apache.catalina.Role> roles;
 
 
 	public boolean isEnabled() {
@@ -110,11 +110,11 @@ public class User {
 		this.username = username;
 	}
 
-	public Collection<Role> getRoles() {
+	public Collection<org.apache.catalina.Role> getRoles() {
 		return roles;
 	}
 
-	public void setRoles(Collection<Role> roles) {
+	public void setRoles(Collection<org.apache.catalina.Role> roles) {
 		this.roles = roles;
 	}
 
